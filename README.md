@@ -4,6 +4,10 @@
   1 Fibonacci --- 矩阵求斐波纳契数列  
   2 InversionNumber --- 一维树状数组求逆序数  
   
+## Collections
+  1 Deque --- C#版双端队列
+  2 LinkedDictionary --- C#版LinkedHashmap(Java)
+  
 ## DataStructure
   1 BITree --- 一维树状数组实现  
   2 BITree2D --- 二维树状数组实现  
