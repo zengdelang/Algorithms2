@@ -5,7 +5,7 @@
   2 InversionNumber --- 一维树状数组求逆序数  
   
 ## Collections
-  1 Deque --- C#版双端队列
+  1 Deque --- C#版双端队列  
   2 LinkedDictionary --- C#版LinkedHashmap(Java)
   
 ## DataStructure
