@@ -3,7 +3,8 @@
 ## Algorithms:  
   1 Fibonacci --- 矩阵求斐波纳契数列  
   2 InversionNumber --- 一维树状数组求逆序数  
-  
+  3 CycleDetection --- Floyd判圈算法判断链表是否有环以及查找环的起点
+
 ## Collections
   1 Deque --- C#版双端队列  
   2 LinkedDictionary --- C#版LinkedHashMap(Java)
