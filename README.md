@@ -8,6 +8,7 @@
 ## Collections
   1 Deque --- C#版双端队列  
   2 LinkedDictionary --- C#版LinkedHashMap(Java)
+  3 PriorityQueue --- C#版优先级队列
   
 ## DataStructure
   1 BITree --- 一维树状数组实现  
