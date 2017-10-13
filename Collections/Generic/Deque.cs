@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -166,11 +166,16 @@ public class Deque<T> : IEnumerable<T>, ICollection
     { 
         if (_size == _array.Length)
         {
-            int newcapacity = _array.Length * 2;
-            if (newcapacity<_array.Length + 4)
+            int oldcapacity = _array.Length;
+            if (oldcapacity == 0)
             {
-                newcapacity = _array.Length + 4;
+                oldcapacity = 2;
             }
+
+            //当容量小于64时候，成倍增长，否则增长50%
+            int newcapacity = (oldcapacity < 64) ?
+                (oldcapacity << 1) :
+                (oldcapacity + oldcapacity >> 1);
             SetCapacity(newcapacity);
         }
     }
