@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 internal static class ThrowHelper
 {
@@ -15,6 +15,7 @@ internal static class ThrowHelper
     public static readonly string InvalidOperation_EnumNotStarted = "Enumeration has not started. Call MoveNext.";
     public static readonly string InvalidOperation_EnumEnded = "Enumeration already finished.";
     public static readonly string InvalidOperation_EmptyDeque = "Deque empty.";
+    public static readonly string InvalidOperation_EmptyPriorityQueue = "PriorityQueue empty";
     public static readonly string Argument_InvalidOffLen = "Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.";
     public static readonly string ArgumentOutOfRange_Index = "Index was out of range. Must be non-negative and less than the size of the collection.";
     public static readonly string ArgumentOutOfRange_NeedNonNegNumRequired = "Non-negative number required.";
