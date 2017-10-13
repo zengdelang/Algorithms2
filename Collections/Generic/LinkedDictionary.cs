@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -518,7 +518,7 @@ public class LinkedDictionary<TKey, TValue> : IDictionary<TKey, TValue>, IDictio
 
     private void Resize()
     {
-        int newSize = HashHelpers.GetPrime(count*2);
+        int newSize = HashHelpers.GetPrime(count << 1);
         int[] newBuckets = new int[newSize];
         for (int i = 0; i < newBuckets.Length; i++) newBuckets[i] = -1;
         Entry[] newEntries = new Entry[newSize];
