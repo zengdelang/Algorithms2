@@ -295,7 +295,7 @@ public class Deque<T> : IEnumerable<T>, ICollection
         return false;
     }
 
-    internal T GetElement(int i)
+    public T GetElement(int i)
     {
         return _array[(_head + i) % _array.Length];
     }
