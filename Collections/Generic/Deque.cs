@@ -18,6 +18,10 @@ public class Deque<T> : IEnumerable<T>, ICollection
     public Deque()
     {
         _array = _emptyArray;
+        _head = 0;
+        _tail = 0;
+        _size = 0;
+        _version = 0;
     }
 
     public Deque(int capacity)
@@ -29,6 +33,7 @@ public class Deque<T> : IEnumerable<T>, ICollection
         _head = 0;
         _tail = 0;
         _size = 0;
+        _version = 0;
     }
 
     public Deque(IEnumerable<T> collection)
@@ -37,6 +42,8 @@ public class Deque<T> : IEnumerable<T>, ICollection
             ThrowHelper.ThrowArgumentNullException(ThrowHelper.collection);
 
         _array = new T[4];
+        _head = 0;
+        _tail = 0;
         _size = 0;
         _version = 0;
 
